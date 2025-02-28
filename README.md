@@ -1,2 +1,4 @@
-Este es mi primer repositorio
-Este es un cambio en la rama desarrollo.
+Repositorio para entregar trabajos para TalentoTech
+
+ENTREGABLE 1 (LECCION 7)
+-- Entregable con estructura semantica y estilos css solo visible en pc (no responsive por el momento)
