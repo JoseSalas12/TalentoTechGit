@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* CONFIGURACION DE ESTILOS EN LA PAGINA  */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box; 
+    font-size: 62.5% 
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0rem;
+    padding: 0rem;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 4.2rem;
+    line-height:5rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+p,a,span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+section{
+    width: 100%;
+    max-width: 120rem;
+    display: flex;
+    padding: 4rem 1.5rem;
+    margin: 0rem auto;
+}
+
+/* ESTILOS GLOBALES DE LA PAG */
+
+#pasatiempos,
+#pendientes,
+#horarios,
+#contacto{
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+}
+
+#pasatiempos > div,
+#pendientes > div,
+#horarios > div,
+#contacto > div{
+    width: 100%;
+}
+
+
+/* HEADER */
+
+#header{
+    width: 100%;
+    padding: 2rem 0rem;
+    position: sticky;
+    top: 0rem;
+    background: #FFFF;
+}
+
+#header .header_content{
+    width: min(95%, 120rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem auto;
+}
+
+#header .header_content .logo_container span{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    background: rgb(53, 53, 116);
+    font-family: 'Poppins' , sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
+    letter-spacing: .05rem;
+    color: #FFFF;
+    
+}
+
+#header .header_content .nav_menu ul.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#header .header_content .nav_menu ul.menu a{
+    text-decoration: none;
+    color: #353574;
+}
+
+/* HERO */
+
+#hero{
+    width: 100%;
+    max-width: 120rem;
+    display: flex;
+    padding: 4rem 1.5rem;
+    margin: 0rem auto;
+}
+
+#hero > div{
+    width: 50%;
+}
+
+#hero .hero_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+#hero .hero_info > *{
+    width: 100%;
+    max-width: 42rem;
+}
+
+#hero .hero_info .social_links{
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+    color: #353574;
+}
+
+#hero .hero_img{
+    display: flex;
+    justify-content: center;
+}
+
+#hero .hero_img img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* PASATIEMPO */
+
+#pasatiempos .pasatiempos_top h2{
+    text-align: center;
+}
+
+#pasatiempos .pasatiempos_bottom ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    column-gap: 3rem;
+}
+
+#pasatiempos .pasatiempos_bottom ul li{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 2.5rem;
+    background: #353574;
+    border: .7rem solid #414192;
+    border-radius: 1.5rem;
+}
+
+#pasatiempos .pasatiempos_bottom ul li .pasatiempo_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pasatiempos .pasatiempos_bottom ul li .pasatiempo_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pasatiempos .pasatiempos_bottom ul li .pasatiempo_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+#pasatiempos .pasatiempos_bottom ul li .pasatiempo_content *{
+    color: #FFFFFF;
+}
+
+#pasatiempos .pasatiempos_bottom ul li .pasatiempo_content h3{
+    text-align: center;
+}
+
+/* PENDIENTES */
+
+#pendientes .pendientes_top h2{
+    text-align: center;
+}
+
+#pendientes .pendientes_bottom{
+    width: 100%;
+    max-width: 52.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#pendientes .pendientes_bottom > *{
+    width: 50%;
+}
+
+#pendientes .pendientes_bottom ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+#pendientes .pendientes_bottom ol li{
+    width: inherit;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+#pendientes .pendientes_bottom picture{
+    display: flex;
+    justify-content: center;
+}
+
+/* HORARIOS */
+
+
+#horarios .horarios_top h2{
+    text-align: center;
+}
+
+#horarios .horarios_bottom{
+    width: 100%;
+    max-width: 76.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+#horarios .horarios_bottom th{
+    padding: 2rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #FFFFFF;
+    background: #353574;
+}
+#horarios .horarios_bottom td{
+    padding: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* CONTACTO */
+#contacto .contacto_top h2{
+    text-align: center;
+}
+
+#contacto .contacto_bottom{
+    display: flex;
+    justify-content: center;
+}
+#contacto .contacto_bottom form{
+    width: 100%;
+    max-width: 52.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+#contacto .contacto_bottom form input{
+    padding: 1.5rem;
+    border: unset;
+    border-bottom: .1rem solid #353574;
+}
+
+#contacto .contacto_bottom form button{
+    padding: 1.5rem;
+    border: unset;
+    border-radius: 100rem;
+    color: #FFFFFF;
+    background: #353574;
+
+}
