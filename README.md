@@ -5,3 +5,6 @@ ENTREGABLE 1 (LECCION 7)
 
 ENTREGABLE 2 (LECCION 9)
 -- Entregable de una calculadora de operaciones basicas utilizando Javascript
+
+ENTREGABLE 3 (LECCION 13)
+-- Entregable con estructura semantica y estilos css solo visible en pc (no responsive por el momento) con validacion de formulario utilizando Javascript
